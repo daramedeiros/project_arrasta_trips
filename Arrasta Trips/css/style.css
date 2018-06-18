@@ -1,0 +1,251 @@
+/* GERAIS */
+* {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #262626;  
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    background-color: white;
+    min-height: 20vh;
+    text-transform: uppercase;
+    padding-right: 5px;
+    }   
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: #262626;
+        text-decoration: none;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #262626; 
+        background-color: #E8E474;
+        
+    }
+         
+    .nav-logo {
+        width: 50%;
+    }
+    
+    .nav-logo img {
+        width: 120px;
+    }
+/* ======================================================
+==========================================/* PAGINA HOME*/
+
+/* BOTÃO SUBIR */
+
+.arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.arrow-up img {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    top: 12px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    width: 20px; 
+}
+
+.arrow-up:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-up:hover img {
+    color: #fff;
+    top: 5px;
+}
+
+/* PARALLAX SOBRE */
+
+#capa .parallax {
+    background-image: url('../img/capa02.jpeg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#capa .parallax-content {
+     text-align: center;
+     padding: 50px 0;
+     position: relative; 
+}
+
+#capa .parallax-content h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #262626;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+#capa .parallax-content > p {
+    color: #262626;
+    text-transform: none;
+}
+
+/* PARALLAX TRIPS */
+#trips .parallax-trips {
+    background-image: url('../img/capa03.jpeg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SESSAO SOBRE */
+.sobre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 35px;
+    align-items: center;
+    border-style: none;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card div {
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* SESSÃO SERVIÇOS*/
+
+.servicos {
+    padding: 50px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E8E474;
+    width: 100%;
+   
+}
+.servicos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.cardserv {
+    width: 315px;
+    height: 315px;
+    padding: 50px 30px;
+    margin: 0px 20px;
+    border-radius: 22px;
+    text-align: center;
+    color: rgb(38, 38, 38);
+    background-color: white;
+
+}
+
+.cardserv img {
+    max-width: 400px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+footer p {
+    font-family: 'Handlee', cursive;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 14px;
+    
+}
+.copyright {
+    padding-top: 15px;
+    margin-top: 10px;
+    background-color: #262626;
+    color: #fff;
+  
+}
+
+.criacao {
+    margin-top: 20px;
+}
+
+
+/* MEDIAQUERY==============================*/
+@media (max-width:750px) {
+    .logo-footer  img {
+        width: 140px;
+        padding-left: 30px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;  
+        padding-right: 11%;
+
+    }
+    #capa .parallax {
+        background-position: unset;
+    }
+    .arrow-up img {
+        left: 0;
+  }
+  .fbInsta {
+   padding-right: 35%;
+    }
+}
+
