@@ -5,11 +5,6 @@
 
 }
 
-a {
-    text-decoration: none;
-    font-family: 'Permanent Marker', cursive;
-}
-
 a:hover {
     text-decoration: none;
     color: #262626;  
@@ -30,11 +25,14 @@ p {
 }
 
 /* NAVBAR */
-nav {
-    background-color: white;
-    min-height: 20vh;
+
+.navbar {
+    background-color: #fff;
     text-transform: uppercase;
     padding-right: 5px;
+    height: 75px;
+    position: relative;
+    width: 100%;
     }   
     
     .navbar-light .navbar-nav .nav-link {
@@ -49,41 +47,35 @@ nav {
         
     }
          
-    .nav-logo {
-        width: 50%;
+    .nav-logo img {
+        width: 170px;
+        margin: 0;
     }
     
-    .nav-logo img {
-        width: 120px;
-    }
 /* ======================================================
 ==========================================/* PAGINA HOME*/
 
 /* BOTÃO SUBIR */
 
 .arrow-up {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.5);
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    border-radius: 35px;
-    display: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    border-radius: 74px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 55px;
+    height: 55px;
 }
 
 .arrow-up img {
     color: #fff;
-    margin: 0;
+    margin: 12px;
     position: relative;
-    top: 12px;
-    font-size: 19px;
     transition: all 0.3s ease;
-    width: 20px; 
+    width: 31px 
 }
 
 .arrow-up:hover {
@@ -95,8 +87,7 @@ nav {
     top: 5px;
 }
 
-/* PARALLAX SOBRE */
-
+/* PARALLAX CAPA */
 #capa .parallax {
     background-image: url('../img/capa02.jpeg');
     min-height: 500px;
@@ -154,12 +145,7 @@ nav {
     margin-top: 10px;
 }
 
-h3 {
-    font-size: 28px;
-}
-
 /* SESSÃO SERVIÇOS*/
-
 .servicos {
     padding: 50px;
     min-height: 500px;
@@ -187,7 +173,7 @@ h3 {
     text-align: center;
     color: rgb(38, 38, 38);
     background-color: white;
-
+    box-sizing: border-box;
 }
 
 .cardserv img {
@@ -196,56 +182,47 @@ h3 {
     margin-top: 5px;
 }
 
+/* SESSAO INSTANOW */
+    .instaNow {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+/* PAGINA SOBRE  */
+
+.sobre-nos img {
+   width: 30%;
+   align-items: center;
+}
+
 /* FOOTER */
-footer{
-    background-color: white;
-    text-align: center;
-    margin-top: 200px;
-}
 
-footer p {
-    font-family: 'Handlee', cursive;
+footer {
+    padding-top: 10px;
+    background-color: #262626;
+    color: #fff; 
+    height: 100%;  
 }
-
 .copyright p{
     text-align: center;
-    font-size: 14px;
-    
+    /* font-size: 14px;   */
 }
-.copyright {
-    padding-top: 15px;
-    margin-top: 10px;
-    background-color: #262626;
-    color: #fff;
-  
-}
-
-.criacao {
-    margin-top: 20px;
-}
-
 
 /* MEDIAQUERY==============================*/
-@media (max-width:750px) {
-    .logo-footer  img {
-        width: 140px;
-        padding-left: 30px;
+@media (max-width:730px) {
+    .servicos > div {
+        display: block;
+        margin: 0 auto;
     }
-    footer {
-        flex-direction: column;
-        text-align: center;
-        width: 100%;  
-        padding-right: 11%;
 
+     .cardserv {
+        margin: 0 auto;
+        margin-bottom: 24px;
     }
-    #capa .parallax {
-        background-position: unset;
-    }
-    .arrow-up img {
-        left: 0;
-  }
-  .fbInsta {
-   padding-right: 35%;
+
+    .instaNow {
+        margin: 0;
     }
 }
+
 
