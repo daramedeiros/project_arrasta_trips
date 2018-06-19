@@ -7,7 +7,7 @@
 
 a:hover {
     text-decoration: none;
-    color: #262626;  
+    color: #262626; 
 }
 
 body {
@@ -155,7 +155,6 @@ p {
     background-size: cover;
     background-color: #E8E474;
     width: 100%;
-   
 }
 .servicos > div {
     display: flex;
@@ -188,28 +187,71 @@ p {
         margin-bottom: 10px;
     }
 
-/* PAGINA SOBRE  */
+/*==================== PAGINA SOBRE ================== */
+.sobre-nos-foto img {
+   width: 100%;  
+}
 
-.sobre-nos img {
-   width: 30%;
-   align-items: center;
+.historia {
+    padding: 60px;
+}
+
+.sobre-nos-conteudo {
+    padding: 30px;
+    color: #262626;
+    background-color: #53E1F4;
+}
+
+.equipe {
+    padding: 30px;
+}
+.membro {
+    padding: 15px;
+    margin: 0
+}
+.membro img {
+    width: 15%;
+    border-radius: 85px;
+}
+.membro a {
+    text-decoration-style: none;
+    color: #A0A09F;
+}
+
+/*==================== PAGINA TRIPS ================== */
+.trips img {
+    min-height: 500px; 
+    width: 100%;
+    padding: 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.ultima-viagem {
+    /* padding: 30px; */
+    text-align: center;
+}
+
+.carosel-sao-thome img {
+    max-width: 800px;
+    margin: 0 auto
 }
 
 /* FOOTER */
-
 footer {
-    padding-top: 10px;
     background-color: #262626;
     color: #fff; 
-    height: 100%;  
-}
-.copyright p{
-    text-align: center;
-    /* font-size: 14px;   */
-}
+    padding: 5px;
+    }
 
-/* MEDIAQUERY==============================*/
-@media (max-width:730px) {
+    .copyright p{
+    text-align: center;
+    }
+
+    /* MEDIAQUERY==============================*/
+    @media (max-width:730px) {
     .servicos > div {
         display: block;
         margin: 0 auto;
@@ -222,6 +264,10 @@ footer {
 
     .instaNow {
         margin: 0;
+    }
+
+    .membro img {
+        width: 35%;
     }
 }
 
