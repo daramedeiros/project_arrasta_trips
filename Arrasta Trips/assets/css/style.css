@@ -2,9 +2,10 @@
 * {
     list-style: none;
     text-decoration: none;
-
 }
 
+
+    
 a:hover {
     text-decoration: none;
     color: #262626; 
@@ -188,8 +189,12 @@ p {
     }
 
 /*==================== PAGINA SOBRE ================== */
-.sobre-nos-foto img {
-   width: 100%;  
+.sobre-nos-foto {
+    background-image: url('../img/sobre_nos.jpg');  min-height: 560px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .historia {
@@ -219,31 +224,38 @@ p {
 }
 
 /*==================== PAGINA TRIPS ================== */
-.trips img {
-    min-height: 500px; 
-    width: 100%;
-    padding: 30px;
+.trips {
+    background-image: url('../img/capa02.jpeg');
+    min-height: 560px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
-}
+    background-size: cover;
+    }
 
 .ultima-viagem {
-    /* padding: 30px; */
     text-align: center;
-}
+    padding-top: 30px;
+    }
 
-.carosel-sao-thome img {
-    max-width: 800px;
-    margin: 0 auto
-}
 
-/* FOOTER */
+.fotos-saothome img {
+    padding: 5px; /* Some padding */
+    width: 290px; /* Set a small width */
+    }
+
+.fotos-saothome {
+    margin: 0 auto;
+    }
+
+
+
+/*==================== FOOTER DE TODAS AS PAGINAS ================== */
 footer {
     background-color: #262626;
     color: #fff; 
-    padding: 5px;
+    padding-bottom: 10px;
+    width: 100%;
     }
 
     .copyright p{
