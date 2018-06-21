@@ -190,11 +190,14 @@ p {
 
 /*==================== PAGINA SOBRE ================== */
 .sobre-nos-foto {
-    background-image: url('../img/sobre_nos.jpg');  min-height: 560px;
+    background-image: url('../img/trips01.JPG'); 
+    min-height: 560px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: overlay;
+    background-color:rgba(50, 0, 0,0.5);
 }
 
 .historia {
@@ -261,7 +264,7 @@ p {
     overflow: auto; /* ativar a rolagem, se necessário */
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.9); 
-}
+    }
 
 /* conteudo img */
 .modal-content {
@@ -269,18 +272,18 @@ p {
     display: block;
     width: 80%;
     max-width: 700px;
-}
+    }
 
 /* adicionando animação */
 .modal-content, #caption { 
     animation-name: zoom;
     animation-duration: 0.6s;
-}
+    }
 
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
-}
+    }
 
 /* botão para fechar */
 #close {
@@ -291,14 +294,14 @@ p {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-}
+    }
 
 #close:hover,
 #close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
+    }
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
@@ -308,32 +311,50 @@ p {
 }
 
 /*==================== PAGINA DESTINOS ================== */
-.destinos-foto {
-    background-image: url('../img/trips37.JPG');
+.arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    background-blend-mode: overlay;
+    background-color:rgba(50, 0, 0,0.5);
+    color: #FFFFFF;
     }
 
-.foto-destino {
-    border-radius: 7px;
+.arraial-do-cabo {
+    background-image: url('../img/capa-destinos1.jpg');
 }
 
-/* .destino-conteudo {
-   padding: 180px;
-} */
-
-.conteudo {
-    padding: 0;
+.capitolio {
+    background-image: url('../img/capa-destinos2.jpg');
 }
 
+.sao-thome-das-letras {
+    background-image: url('../img/capa-destinos4.jpg');
+}
+
+.trindade {
+    background-image: url('../img/capa-destinos5.jpg');
+}
+
+.campos-do-jordao {
+    background-image: url('../img/campos.jpg');
+}
+
+.thermas-dos-laranjais {
+    background-image: url('../img/thermas.jpg');
+    background-blend-mode: overlay;
+}
+
+/*==================== PAGINA DEPOIMENTOS ================== */
+.avaliacoes {
+    background-image: url('../img/fundo-depoimentos.jpg');
+    opacity: 0.5;
 
 
-
-
+}
 
 
 /*==================== FOOTER DE TODAS AS PAGINAS ================== */
