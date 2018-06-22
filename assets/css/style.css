@@ -4,8 +4,6 @@
     text-decoration: none;
 }
 
-
-    
 a:hover {
     text-decoration: none;
     color: #262626; 
@@ -26,7 +24,6 @@ p {
 }
 
 /* NAVBAR */
-
 .navbar {
     background-color: #fff;
     text-transform: uppercase;
@@ -45,12 +42,15 @@ p {
     .navbar-light .navbar-nav .nav-link:hover {
         color: #262626; 
         background-color: #E8E474;
-        
     }
-         
+
+    .navbar-collapse {
+        background: #fff;
+    }
+
     .nav-logo img {
-        width: 170px;
-        margin: 0;
+        width: 72px;
+        margin: 5px;
     }
     
 /* ======================================================
@@ -303,13 +303,6 @@ p {
     cursor: pointer;
     }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
 /*==================== PAGINA DESTINOS ================== */
 .arraial-do-cabo, .capitolio, .sao-thome-das-letras, .trindade, .campos-do-jordao, .thermas-dos-laranjais {
     width: 100%;
@@ -322,27 +315,21 @@ p {
     background-color:rgba(50, 0, 0,0.5);
     color: #FFFFFF;
     }
-
 .arraial-do-cabo {
     background-image: url('../img/capa-destinos1.jpg');
 }
-
 .capitolio {
     background-image: url('../img/capa-destinos2.jpg');
 }
-
 .sao-thome-das-letras {
     background-image: url('../img/capa-destinos4.jpg');
 }
-
 .trindade {
     background-image: url('../img/capa-destinos5.jpg');
 }
-
 .campos-do-jordao {
     background-image: url('../img/campos.jpg');
 }
-
 .thermas-dos-laranjais {
     background-image: url('../img/thermas.jpg');
     background-blend-mode: overlay;
@@ -351,23 +338,60 @@ p {
 /*==================== PAGINA DEPOIMENTOS ================== */
 .avaliacoes {
     background-image: url('../img/fundo-depoimentos.jpg');
-    opacity: 0.5;
+    }
+.avaliacoes img {
+    opacity: 0.7;
+    transition: 0.3s;
+}
 
+.avaliacoes img :hover {
+   opacity: 1;
+}
 
+/*==================== PAGINA CONTATO ================== */
+.perguntas {
+    background-image: url('../img/fundo-perguntas.jpg');
+    color: white;
+
+    
+}
+
+.resposta {
+    display: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 114, 112);
+    padding-top: 8px;
+    font-style: italic;   
 }
 
 
-/*==================== FOOTER DE TODAS AS PAGINAS ================== */
-footer {
-    background-color: #262626;
-    color: #fff; 
-    padding-bottom: 10px;
-    width: 100%;
-    }
 
-    .copyright p{
+/*==================== FOOTER DE TODAS AS PAGINAS ================== */
+footer p{
+    color:#262626;
+}
+
+a{
+    color:#262626;
+}
+
+.endereco a:hover{
+    background-color: #A0A09F;
+    color: #53E1F4;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.copyright{
+    background-color: #262626;
+}
+.copyright p{
     text-align: center;
-    }
+    font-size: 14px;
+    padding-top: 50px;
+    color: #fff;
+}
 
     /* MEDIAQUERY==============================*/
     @media (max-width:730px) {
@@ -375,25 +399,27 @@ footer {
         display: block;
         margin: 0 auto;
     }
-
      .cardserv {
         margin: 0 auto;
         margin-bottom: 24px;
     }
-
     .instaNow {
         margin: 0;
     }
-
     .membro img {
         width: 35%;
     }
 }
-
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
+    .nav-logo img {
+        width: 50px;
+        margin: 5px;
+    }
+
 }
+
 
 

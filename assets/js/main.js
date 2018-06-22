@@ -26,3 +26,11 @@ $(document).ready(function() {
          }, 1000);
      });
 });
+
+// BOTÃO SAIBA MAIS PAGINA CONTATO
+$(document).ready(function(){
+    $(".mais").click(function(){
+        $(".resposta").toggle();
+    });
+});
+
