@@ -402,6 +402,8 @@ a{
      .cardserv {
         margin: 0 auto;
         margin-bottom: 24px;
+        width: 260px;
+        height: 334px;
     }
     .instaNow {
         margin: 0;
