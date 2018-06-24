@@ -27,10 +27,4 @@ $(document).ready(function() {
      });
 });
 
-// // BOTÃO SAIBA MAIS PAGINA CONTATO
-// $(document).ready(function(){
-//     $(".mais").click(function(){
-//         $(".resposta").toggle();
-//     });
-// });
 
