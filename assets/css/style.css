@@ -49,8 +49,9 @@ p {
     }
 
     .nav-logo img {
-        width: 72px;
+        width: 92px;
         margin: 5px;
+        padding: 9px;
     }
     
 /* ======================================================
@@ -357,7 +358,6 @@ p {
 }
 
 .resposta {
-    display: none;
     font-size: 15px;
     color: rgb(255, 255, 255);
     background-color: rgb(111, 114, 112);
@@ -378,7 +378,7 @@ a{
 
 .endereco a:hover{
     background-color: #A0A09F;
-    color: #53E1F4;
+    color: #262626;
     padding: 5px;
     text-decoration: none;
 }
@@ -417,7 +417,7 @@ a{
         width: 100%;
     }
     .nav-logo img {
-        width: 50px;
+        width: 90px;
         margin: 5px;
     }
 
